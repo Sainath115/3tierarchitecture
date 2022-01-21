@@ -1,0 +1,39 @@
+variables:
+  - name: serviceConnectionApp
+    value: SP-PROD-1986-CAP # <--- CHANGE TO DEVOPS SERVICE CONNECTION NAME
+
+  # Terraform Backend Setup
+  - name: backendResourceGroupName
+    value: $(motsId)-eastus2-prod-devops-rg
+  - name: backendStorageAccountName
+    value: $(motsId)prodstattl0vkrj
+  - name: backendContainerName
+    value: cap-eastus2-vmss-prod-tfstate
+
+  # Jumpstart Variables
+  - name: resource_group_name
+    value: "cap-eastus2-prod-core-rg-01"
+  - name: networking_resource_group_name
+    value: "cap-eastus2-prod-core-rg-01"
+  - name: key_vault_name
+    value: "capeastus2prodkv02"
+  - name: msi_object_id
+    value: "f6f15eec-92c1-43be-b511"
+  - name: storage_account_name
+    value: "capprodst01"
+  - name: log_analytics_name
+    value: "cap-eastus2-prod-law-01"
+  - name: ado_resource_group_name
+    value: "19867-eastus2-nprd-devops-rg"
+  - name: ado_vnet_name
+    value: "eastus2-devops-vnet"
+  - name: ado_subnet_name
+    value: "eastus2-devops-vnet-base-snet"
+  - name: ado_subscription_id
+    value: "02b9662b-8e86-"
+  - name: ado_key_vault_name
+    value: "dev-19867-eastus2-kv"
+  - name: subscription_id
+    value: "a52fd588-5c6e"
+  - name: tenant_id
+    value: "72f988bf-86f1-"
